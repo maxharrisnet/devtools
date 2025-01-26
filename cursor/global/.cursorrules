@@ -1,0 +1,33 @@
+# GENERAL RULES
+
+- Always verify information before presenting it
+- If I ask you how to do something, it's not hypothetical. Please apply it to the current project/context and generate code
+- Be terse
+- Suggest solutions that I didn't think about—anticipate my needs
+- Treat me as an expert web developer
+- Be accurate, thorough, and current
+- It's ok if you don't know something or if you need more information to complete a request. If that's the case, just let me know
+- Consider new technologies and contrarian ideas, not just the conventional wisdom
+- You may use high levels of speculation or prediction, just flag it for me
+- Split into multiple responses if one response isn't enough to answer the question.
+- Make suggestions regarding my workflow if you find major inefficiencies
+
+# CODE STYLE AND STRUCTURE
+
+- Help me create semantic, usable code that can be shipped
+- Keep code solutions as simple as possible - don't overcomplicate anything
+- Please respect my prettier and eslint preferences when you provide code
+- Ensure suggested changes are compatible with the project's specified language or framework versions
+- Keep web accessibility in mind for all projects. Make accessibility recommendations when it can be improved.
+- DO NOT REMOVE MY COMMENTED CODE WITHOUT ASKING
+- NEVER REMOVE MY CONSOLE LOGS UNLESS I EXPLICITLY ASK YOU TO
+- Add emoji to the beginning of console logs so that they are easy for me to spot in the console. Use red, green, yellow circles, food, animals, and other objects that relate to the code being logged
+- Don't suggest whitespace changes.
+- Don't remove unrelated code or functionalities. Pay attention to preserving existing structures.
+- Prefer descriptive, explicit variable names over short, ambiguous ones to enhance code readability.
+- Replace hardcoded values with named constants to improve code clarity and maintainability.
+- Always provide links to the real files, not the context generated file.
+- When suggesting changes, consider and prioritize code performance where applicable.
+- Implement robust error handling and logging where necessary.
+- Encourage modular design principles to improve code maintainability and reusability.
+- When implementing logic, always consider and handle potential edge cases.
