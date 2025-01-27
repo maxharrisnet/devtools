@@ -77,6 +77,13 @@ The user asks questions about the following coding languages:
 - Use the spacing from the design system
 - Use the border radius from the design system
 - Use the shadow from the design system
+- Use external stylesheets for CSS.
+- Use class selectors over ID selectors for styling.
+- Use Flexbox and Grid for layout.
+- Use rem and em units for scalable and accessible typography.
+- Use CSS variables for consistent theming.
+- Use BEM (Block Element Modifier) methodology for naming classes.
+- Avoid !important; use specificity to manage styles.
 
 # FILE STRUCTURE
 
@@ -94,16 +101,6 @@ The user asks questions about the following coding languages:
 - Use <img> with alt attribute for images.
 - Use <form> for forms, with appropriate input types and labels.
 - Avoid using deprecated elements (e.g., <font>, <center>).
-
-# CSS
-
-- Use external stylesheets for CSS.
-- Use class selectors over ID selectors for styling.
-- Use Flexbox and Grid for layout.
-- Use rem and em units for scalable and accessible typography.
-- Use CSS variables for consistent theming.
-- Use BEM (Block Element Modifier) methodology for naming classes.
-- Avoid !important; use specificity to manage styles.
 
 # RESPONSIVE DESIGN
 
@@ -128,3 +125,52 @@ The user asks questions about the following coding languages:
 - Avoid excessive use of animations and transitions.
 - Use lazy loading for images and other media.
 - Document responsive breakpoints and design decisions.
+
+# ERROR HANDLING
+
+- Use consistent patterns for try/catch blocks and promise chains.
+- Add detailed error messages and log errors for debugging.
+- Integrate error tracking tools (e.g., Sentry) where applicable.
+
+# TESTING
+
+# SECURITY
+
+- Escape user inputs to prevent XSS.
+- Sanitize file uploads.
+- Secure secrets with .env and never commit them to Git.
+- Implement CSRF protection for forms and API endpoints
+- Use HTTPS for all production environments
+- Implement proper authentication and authorization mechanisms
+- Hash passwords using strong algorithms (e.g., bcrypt, Argon2)
+- Set secure HTTP headers (X-Frame-Options, Content-Security-Policy, etc.)
+- Validate and sanitize all user inputs on both client and server side
+- Use parameterized queries to prevent SQL injection
+- Implement rate limiting for API endpoints
+- Keep dependencies updated and regularly check for security vulnerabilities
+- Follow the principle of least privilege for user permissions
+- Use secure session management practices
+- Implement proper CORS policies
+- Never expose sensitive information in error messages
+- Use secure cookie attributes (HttpOnly, Secure, SameSite)
+- Implement proper logout mechanisms that invalidate sessions
+- Use strong password policies and MFA where appropriate
+
+# VERSION CONTROL
+
+- Use Git for version control
+- Commit frequently with descriptive commit messages
+- Create feature branches for new features or changes
+- Use pull requests for code review and collaboration
+- Merge into main or master branch after review
+- Keep branches up to date with main or master
+- Use rebase for clean history
+- Use tags for release versions
+
+# WORKFLOW
+
+- Prettier & ESLint: Use shared configurations (e.g., .prettierrc, .eslintrc).
+- Code Review: Encourage PR reviews with automated checks (e.g., GitHub Actions).
+- Tooling: Integrate tools like Husky for pre-commit hooks to enforce linting.
+
+# DOCUMENTATION
