@@ -1,0 +1,61 @@
+<html>
+
+<head>
+  <title>Video Modal</title>
+  <link rel="stylesheet" href="modal.css">
+  <script src="modal.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <section>
+      <div className={s.ddm__keywnoteDetailsRow}>
+        <div className={s.ddm__keynoteCol1}>
+          <img
+            src={onDemandSessionKeynote}
+            data-vimeo-src='https://player.vimeo.com/video/1134741780?h=e9a826bb82&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
+            style={{ cursor: 'pointer' }} />
+        </div>
+        <div className={s.ddm__keynoteCol2}>
+          <h4>Opening Keynote</h4>
+          <p>Decision intelligence isn't coming — it's already here. Aera Technology Co-founder and CEO Fred Laluyaux reveals how leading enterprises are embedding decision intelligence at scale to transform performance, resilience, and the very nature of work. Get a front-row view of the operating model that will define the next decade.</p>
+          <div className={s.ddm__keynoteSpeakerDetails}>
+            <div>
+              <img
+                src={keynoteFred}
+                alt='Fred Laluyaux' />
+            </div>
+            <div className={s.ddm__keynoteSpeaker}>
+              <h5>Fred Laluyaux</h5>
+              <p>Co-Founder, President & CEO, Aera Technology</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Pop Up Container -->
+    <div
+      className={s.ddm__videoPopup}
+      id='videoPopup'>
+      <div className={s.ddm__videoContainer}>
+        <button
+          className={s.ddm__closeBtn}
+          id='closePopup'>
+          &times;
+        </button>
+        <div className={s.ddm__videoContainer__videoWrapper}>
+          <iframe
+            id='vimeoVideo'
+            name='vimeoVideo'
+            src='https://player.vimeo.com/video/1092832152?h=072b10d5bc&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
+            allow='autoplay; fullscreen; picture-in-picture'
+            loading='lazy'></iframe>
+        </div>
+        <script src='https://player.vimeo.com/api/player.js'></script>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
